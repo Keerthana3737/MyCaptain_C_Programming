@@ -1,0 +1,19 @@
+//C program to perform the swapping of 2 numbers without using a temporary variable
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    //getting input from the user
+    printf("Enter two numbers:\n");
+    scanf("%d%d",&a,&b);
+    
+    //printing original values
+    printf("The numbers before swapping are\na=%d\tb=%d",a,b);
+    
+    //swapping the values
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    
+    printf("\nThe numbers after swapping are\na=%d\tb=%d",a,b);
+}
